@@ -106,7 +106,7 @@ Define task
 | ---- | --- | ----------- |
 | options | Object |  Optional settings |
 | options.force | boolean |  Force to write |
-| options.dirname | string |  Target directory name |
+| options.cwd | string |  Target directory name |
 
 
 ### `tmpl(config) -> string`
