@@ -79,10 +79,10 @@ const ponTaskInit = require('pon-task-init')
 
 ;(async () => {
   let run = pon({
-    myTask01: ponTaskInit()
+    'init': ponTaskInit({force: false})
   })
 
-  run('myTask01')
+  run('init')
 }).catch((err) => console.error(err))
 
 ```
@@ -106,6 +106,7 @@ Define task
 | ---- | --- | ----------- |
 | options | Object |  Optional settings |
 | options.force | boolean |  Force to write |
+| options.dirname | string |  Target directory name |
 
 
 ### `tmpl(config) -> string`

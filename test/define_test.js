@@ -22,7 +22,7 @@ describe('define', function () {
   it('Define', async () => {
     const ctx = ponContext()
     const task = define({
-      dirname: `${__dirname}/../tmp/testing-init`,
+      cwd: `${__dirname}/../tmp/testing-init`,
       force: true
     })
     ok(task)
